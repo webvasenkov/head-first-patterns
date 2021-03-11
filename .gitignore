@@ -1,2 +1,2 @@
 *.js
-/tsconfig.json
+!tsconfig.json
