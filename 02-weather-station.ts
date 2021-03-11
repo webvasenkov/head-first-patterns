@@ -165,6 +165,7 @@ class HeatIndexDisplay implements DisplayElement, Observer {
       0.0000000000481975 * (t * t * t * rh * rh * rh);
     return index;
   }
+
   update(temperature: number, humidity: number) {
     this.heatIndex = +this.computeHeatIndex(temperature, humidity).toFixed(5);
     this.display();
